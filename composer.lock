@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "695c109563628705d5c9d3aa2a6cb5af",
+    "content-hash": "17c410f5f466120de3b67bc0159ecabd",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,6 +125,37 @@
                 "zikula"
             ],
             "time": "2018-08-27T06:10:37+00:00"
+        },
+        {
+            "name": "deliciousbrains/spinupwp-mu-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/spinupwp-mu-plugin.git",
+                "reference": "ffa661d5d0f873b865b6c8f82437a7841cf3b2e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/spinupwp-mu-plugin/zipball/ffa661d5d0f873b865b6c8f82437a7841cf3b2e8",
+                "reference": "ffa661d5d0f873b865b6c8f82437a7841cf3b2e8",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Delicious Brains",
+                    "email": "nom@deliciousbrains.com"
+                }
+            ],
+            "description": "WordPress must-use plugin for sites hosted with SpinupWP",
+            "support": {
+                "source": "https://github.com/deliciousbrains/spinupwp-mu-plugin/tree/master",
+                "issues": "https://github.com/deliciousbrains/spinupwp-mu-plugin/issues"
+            },
+            "time": "2019-02-01T17:25:28+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -469,7 +500,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "deliciousbrains/spinupwp-mu-plugin": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

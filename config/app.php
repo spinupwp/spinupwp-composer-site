@@ -33,13 +33,6 @@ if ( file_exists( $root_dir . '/.env' ) ) {
  * Default: production
  */
 App::define( 'WP_ENV', env( 'WP_ENV' ) ?: 'production' );
-
-// Environment config
-$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
-if ( file_exists( $env_config ) ) {
-	require_once $env_config;
-}
-
 App::define( 'WP_HOME', env( 'WP_HOME' ) );
 App::define( 'WP_SITEURL', env( 'WP_SITEURL' ) );
 App::define( 'CONTENT_DIR', '/content' );
@@ -53,6 +46,12 @@ App::define('DB_HOST', env('DB_HOST') ?: 'localhost');
 App::define('DB_CHARSET', 'utf8mb4');
 App::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
+
+// Environment config
+$env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
+if ( file_exists( $env_config ) ) {
+	require_once $env_config;
+}
 
 App::define('AUTOMATIC_UPDATER_DISABLED', true);
 App::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
