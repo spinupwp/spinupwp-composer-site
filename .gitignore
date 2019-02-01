@@ -1,0 +1,15 @@
+/vendor
+wp-cli.local.yml
+.env
+.env.*
+!.env.example
+config/keys.php
+
+public/wp
+public/.htaccess
+
+public/content/uploads
+!public/content/uploads/.gitkeep
+public/content/plugins
+public/content/themes/twenty*
+

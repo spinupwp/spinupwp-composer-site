@@ -1,0 +1,52 @@
+{
+  "name": "deliciousbrains/spinupwp-composer-site",
+  "keywords": [
+    "WordPress",
+    "Composer",
+    "SpinupWP"
+  ],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Delicious Brains",
+      "homepage": "https://deliciousbrains.com/"
+    }
+  ],
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "^1.4",
+    "vlucas/phpdotenv": "^2.0.1",
+    "oscarotero/env": "^1.1.0",
+    "johnpbloch/wordpress": "5.*",
+    "wpackagist-plugin/limit-login-attempts": "*",
+    "wpackagist-plugin/redis-cache": "*",
+    "wpackagist-theme/twentynineteen": "*"
+  },
+  "extra": {
+    "wordpress-install-dir": "public/wp",
+    "installer-paths": {
+      "public/content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ]
+  },
+  "autoload": {
+    "psr-4": {"DeliciousBrains\\SpinupWPComposerSite\\": "app/"}
+  }
+}
