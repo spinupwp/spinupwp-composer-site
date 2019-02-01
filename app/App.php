@@ -15,6 +15,10 @@ class App {
 	 * Bootstrap the SpinupWP mu-plugin.
 	 */
 	protected function load_spinupwp_mu_plugin() {
+		if ( ! defined( 'SPINUPWP_CACHE_PATH' ) ) {
+			return;
+		}
+
 		$vendor_dir = dirname( __DIR__ ) . '/vendor/deliciousbrains/spinupwp-mu-plugin';
 		if ( file_exists( $vendor_dir ) ) {
 			require_once $vendor_dir . '/src/spinupwp.php';
