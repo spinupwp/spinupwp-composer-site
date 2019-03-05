@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17c410f5f466120de3b67bc0159ecabd",
+    "content-hash": "46b769a126c7c19b951d15fe7e191907",
     "packages": [
         {
             "name": "composer/installers",
@@ -128,21 +128,26 @@
         },
         {
             "name": "deliciousbrains/spinupwp-mu-plugin",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deliciousbrains/spinupwp-mu-plugin.git",
-                "reference": "ffa661d5d0f873b865b6c8f82437a7841cf3b2e8"
+                "reference": "c960018f28ca3f016047db9c3c5a4c4206001158"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deliciousbrains/spinupwp-mu-plugin/zipball/ffa661d5d0f873b865b6c8f82437a7841cf3b2e8",
-                "reference": "ffa661d5d0f873b865b6c8f82437a7841cf3b2e8",
+                "url": "https://api.github.com/repos/deliciousbrains/spinupwp-mu-plugin/zipball/c960018f28ca3f016047db9c3c5a4c4206001158",
+                "reference": "c960018f28ca3f016047db9c3c5a4c4206001158",
                 "shasum": ""
             },
-            "type": "library",
+            "require": {
+                "composer/installers": "~1.0",
+                "lkwdwrd/wp-muplugin-loader": "~1.0.0"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPLv2"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -151,11 +156,7 @@
                 }
             ],
             "description": "WordPress must-use plugin for sites hosted with SpinupWP",
-            "support": {
-                "source": "https://github.com/deliciousbrains/spinupwp-mu-plugin/tree/master",
-                "issues": "https://github.com/deliciousbrains/spinupwp-mu-plugin/issues"
-            },
-            "time": "2019-02-01T17:25:28+00:00"
+            "time": "2019-03-05T12:06:37+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -284,6 +285,55 @@
                 "wordpress"
             ],
             "time": "2018-11-09T20:10:38+00:00"
+        },
+        {
+            "name": "lkwdwrd/wp-muplugin-loader",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lkwdwrd/wp-muplugin-loader.git",
+                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lkwdwrd/wp-muplugin-loader/zipball/aed228e0037fc243c116a0d2d69076db5ed7d96b",
+                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "10up/wp_mock": "dev-dev",
+                "codeclimate/php-test-reporter": "^0.4.4",
+                "phpunit/phpunit": "^7.1.4"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Woodward",
+                    "email": "woodward.lucas@gmail.com"
+                }
+            ],
+            "description": "A drop-in MU Plugin loader for WordPress",
+            "keywords": [
+                "loader",
+                "muplugin",
+                "wordpress"
+            ],
+            "time": "2018-04-20T22:09:51+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -500,9 +550,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "deliciousbrains/spinupwp-mu-plugin": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

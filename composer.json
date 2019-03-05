@@ -17,10 +17,6 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/deliciousbrains/spinupwp-mu-plugin"
     }
   ],
   "config": {
@@ -30,7 +26,7 @@
   "require": {
     "php": ">=7.1",
     "composer/installers": "^1.4",
-    "deliciousbrains/spinupwp-mu-plugin": "dev-master",
+    "deliciousbrains/spinupwp-mu-plugin": "^1.0",
     "johnpbloch/wordpress": "5.*",
     "oscarotero/env": "^1.1.0",
     "vlucas/phpdotenv": "^2.0.1",
