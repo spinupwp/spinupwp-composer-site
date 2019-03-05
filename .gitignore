@@ -10,6 +10,7 @@ auth.json
 public/wp
 public/.htaccess
 
+public/content/debug.log
 public/content/uploads
 !public/content/uploads/.gitkeep
 public/content/plugins
