@@ -1,4 +1,5 @@
 /vendor
+.idea
 wp-cli.local.yml
 .env
 .env.*
