@@ -5,6 +5,7 @@ wp-cli.local.yml
 .env.*
 !.env.example
 config/keys.php
+auth.json
 
 public/wp
 public/.htaccess
