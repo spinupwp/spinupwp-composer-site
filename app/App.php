@@ -23,4 +23,17 @@ class App {
 
 		define( $key, $value );
 	}
+
+	/**
+	 * @param $name
+	 * @param $arguments
+	 *
+	 * @return bool
+	 */
+	public static function __callStatic( $name, $arguments ) {
+		if ( 'is_env_' === substr( $name, 0, 7 ) ) {
+			$env = substr( $name, 7 );
+			return $env === env( 'WP_ENV' );
+		}
+	}
 }
