@@ -63,7 +63,7 @@ App::define('DISALLOW_FILE_MODS', true);
 // Secret keys
 if ( ! file_exists( __DIR__ . '/keys.php' ) ) {
 	$keys = file_get_contents( 'https://api.wordpress.org/secret-key/1.1/salt/' );
-	file_put_contents( __DIR__ . '/keys.php', '<?php use \DeliciousBrains\SpinupWPComposerSite\App; ' . str_replace( 'define(', 'App::define(', $keys ) );
+	file_put_contents( __DIR__ . '/keys.php', '<?php use ' . App::class . '; ' . str_replace( 'define(', 'App::define(', $keys ) );
 }
 include __DIR__ . '/keys.php';
 
