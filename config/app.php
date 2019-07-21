@@ -47,6 +47,11 @@ App::define('DB_CHARSET', 'utf8mb4');
 App::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
+// Set other constants from env file.
+foreach( $dotenv->getEnvironmentVariableNames() as $key ) {
+	App::define($key, env( $key ));
+}
+
 // Environment config
 $env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
 if ( file_exists( $env_config ) ) {
