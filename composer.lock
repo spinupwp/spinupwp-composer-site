@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46b769a126c7c19b951d15fe7e191907",
+    "content-hash": "cc1eedaa18b1d56ea74a2344f3abb693",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,38 +125,6 @@
                 "zikula"
             ],
             "time": "2018-08-27T06:10:37+00:00"
-        },
-        {
-            "name": "deliciousbrains/spinupwp-mu-plugin",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/deliciousbrains/spinupwp-mu-plugin.git",
-                "reference": "c960018f28ca3f016047db9c3c5a4c4206001158"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/deliciousbrains/spinupwp-mu-plugin/zipball/c960018f28ca3f016047db9c3c5a4c4206001158",
-                "reference": "c960018f28ca3f016047db9c3c5a4c4206001158",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "lkwdwrd/wp-muplugin-loader": "~1.0.0"
-            },
-            "type": "wordpress-muplugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Delicious Brains",
-                    "email": "nom@deliciousbrains.com"
-                }
-            ],
-            "description": "WordPress must-use plugin for sites hosted with SpinupWP",
-            "time": "2019-03-05T12:06:37+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -285,55 +253,6 @@
                 "wordpress"
             ],
             "time": "2018-11-09T20:10:38+00:00"
-        },
-        {
-            "name": "lkwdwrd/wp-muplugin-loader",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lkwdwrd/wp-muplugin-loader.git",
-                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lkwdwrd/wp-muplugin-loader/zipball/aed228e0037fc243c116a0d2d69076db5ed7d96b",
-                "reference": "aed228e0037fc243c116a0d2d69076db5ed7d96b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "require-dev": {
-                "10up/wp_mock": "dev-dev",
-                "codeclimate/php-test-reporter": "^0.4.4",
-                "phpunit/phpunit": "^7.1.4"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Luke Woodward",
-                    "email": "woodward.lucas@gmail.com"
-                }
-            ],
-            "description": "A drop-in MU Plugin loader for WordPress",
-            "keywords": [
-                "loader",
-                "muplugin",
-                "wordpress"
-            ],
-            "time": "2018-04-20T22:09:51+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -525,6 +444,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/spinupwp",
+            "version": "1.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/spinupwp/",
+                "reference": "tags/1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/spinupwp.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/spinupwp/"
         },
         {
             "name": "wpackagist-theme/twentynineteen",
