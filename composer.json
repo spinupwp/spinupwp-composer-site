@@ -29,9 +29,8 @@
     "johnpbloch/wordpress": "5.*",
     "oscarotero/env": "^1.1.0",
     "vlucas/phpdotenv": "^2.0.1",
-    "wpackagist-plugin/limit-login-attempts": "*",
-    "wpackagist-plugin/redis-cache": "*",
-    "wpackagist-plugin/spinupwp": "^1.1",
+    "wpackagist-plugin/limit-login-attempts-reloaded": "*",
+    "wpackagist-plugin/spinupwp": "*",
     "wpackagist-theme/twentynineteen": "*"
   },
   "extra": {
