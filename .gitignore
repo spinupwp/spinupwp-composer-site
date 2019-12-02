@@ -1,4 +1,5 @@
 /vendor
+/composer.lock
 .idea
 wp-cli.local.yml
 .env
