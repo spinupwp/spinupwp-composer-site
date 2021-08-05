@@ -6,7 +6,7 @@ Inspired by Root's Bedrock and other Composer based setups.
 
 ## Requirements
 
-* PHP >= 7.1
+* PHP >= 7.3
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 
 ## Installation
