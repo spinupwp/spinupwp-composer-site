@@ -22,7 +22,8 @@ Env::init();
 /**
  * Use Dotenv to set required environment variables and load .env file in root
  */
-$dotenv = \Dotenv\Dotenv::create( $root_dir );
+$env_files = file_exists( $root_dir . '/.env.local' ) ? [ '.env', '.env.local' ] : [ '.env' ];
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable($root_dir, $env_files, false);
 if ( file_exists( $root_dir . '/.env' ) ) {
 	$dotenv->load();
 	$dotenv->required( [ 'DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL' ] );
@@ -48,7 +49,7 @@ App::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
 // Set other constants from env file.
-foreach( $dotenv->getEnvironmentVariableNames() as $key ) {
+foreach( array_keys($dotenv->load()) as $key ) {
 	App::define($key, env( $key ));
 }
 
