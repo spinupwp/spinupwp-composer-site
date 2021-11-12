@@ -48,5 +48,8 @@
   },
   "autoload": {
     "psr-4": {"DeliciousBrains\\SpinupWPComposerSite\\": "app/"}
+  },
+  "require-dev": {
+    "humanmade/coding-standards": "^1.1"
   }
 }
