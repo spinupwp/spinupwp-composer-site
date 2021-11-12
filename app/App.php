@@ -34,7 +34,7 @@ class App {
 	 * This allows the environment to be queried using magic methods like App::is_env_<environment>
 	 *
 	 * @param string $name       The name of the magic method
-	 * @param $arguments  The arguments to the magic method
+	 * @param array  $arguments  The arguments to the magic method
 	 *
 	 * @return bool
 	 */
