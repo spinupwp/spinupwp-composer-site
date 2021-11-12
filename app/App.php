@@ -1,6 +1,7 @@
 <?php
 
 namespace DeliciousBrains\SpinupWPComposerSite;
+use function Env\env;
 
 class App {
 

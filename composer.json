@@ -27,7 +27,7 @@
     "php": ">=7.3",
     "composer/installers": "^1.4",
     "johnpbloch/wordpress": "5.*",
-    "oscarotero/env": "^1.1.0",
+    "oscarotero/env": "^2.1.0",
     "vlucas/phpdotenv": "^5.3",
     "wpackagist-plugin/limit-login-attempts-reloaded": "*",
     "wpackagist-plugin/spinupwp": "*",
