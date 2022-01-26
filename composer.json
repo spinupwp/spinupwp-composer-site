@@ -24,7 +24,8 @@
     "sort-packages": true,
     "allow-plugins": {
       "composer/installers": true,
-      "johnpbloch/wordpress-core-installer": true
+      "johnpbloch/wordpress-core-installer": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "require": {
@@ -52,5 +53,8 @@
   },
   "autoload": {
     "psr-4": {"DeliciousBrains\\SpinupWPComposerSite\\": "app/"}
+  },
+  "require-dev": {
+    "humanmade/coding-standards": "^1.1"
   }
 }
