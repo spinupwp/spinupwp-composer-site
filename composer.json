@@ -36,7 +36,7 @@
     "vlucas/phpdotenv": "^5.3",
     "wpackagist-plugin/limit-login-attempts-reloaded": "*",
     "wpackagist-plugin/spinupwp": "*",
-    "wpackagist-theme/twentytwentyone": "*"
+    "wpackagist-theme/twentytwentytwo": "*"
   },
   "extra": {
     "wordpress-install-dir": "public/wp",
