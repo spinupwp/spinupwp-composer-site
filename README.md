@@ -13,7 +13,7 @@ Inspired by Root's Bedrock and other Composer based setups.
 
 1. Create a new project: 
     ```sh
-    $ composer create-project deliciousbrains/spinupwp-composer-site /path/to/site/webroot
+    $ composer create-project spinupwp/spinupwp-composer-site /path/to/site/webroot
     ```
 2. Update environment variables in the `.env` file:
   * `DB_NAME` - Database name
